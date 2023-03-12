@@ -1,12 +1,12 @@
 %% nosie setting
-noise_v = 0.0015; % gain for velocity noise
-noise_a = 0.0005; % gain for angle noise
+noise_v = 0.0002; % gain for velocity noise
+noise_a = 0.0002; % gain for angle noise
 sample_a = 0.01; % noise sample time for angle
-sample_v = 0.04; % noise sample time for velocity
+sample_v = 0.02; % noise sample time for velocity
 delay_a = 0; % delay for angel mesasure
-delay_v = 0.1; % delay for velocity mesasure
-delay_limit = 0.3; % dynamic delay limit
-delay_sample = 0.1; % dynamic delay sample time
+delay_v = 0.12; % delay for velocity mesasure
+delay_limit = 0.4; % dynamic delay limit
+delay_sample = 0.12; % dynamic delay sample time
 
 
 % ===== Inner-loop controller switch =====

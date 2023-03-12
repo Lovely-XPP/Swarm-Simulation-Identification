@@ -134,4 +134,5 @@ in = v_cmd(:,1);
 out_p = p(:,1) - p(1,1);
 out_v = v(:,1);
 save(strcat(savedir, "/identify_data.mat"), "t", "out_p", "out_v", "in", '-mat');
+save(strcat(savedir, "/origin_data.mat"), "data", '-mat');
 end
