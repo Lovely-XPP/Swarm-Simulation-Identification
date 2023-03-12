@@ -1,4 +1,4 @@
-function fig(out, amplitude, f0, f1, h)
+function fig(out, amplitude, f0, f1)
 time = 80;
 if f0 == 0.09 && f1 == 1.21
     time = 120;
@@ -126,7 +126,7 @@ if mode == 1
 end
 
 %% save data
-savedir = sprintf("./identify/%.2f-%.2f-%.2f-%.0f-%.1f", amplitude, f0, f1, time, h);
+savedir = sprintf("./identify/%.2f-%.2f-%.2f-%.0f", amplitude, f0, f1, time);
 if ~exist(savedir, "dir")
     mkdir(savedir);
 end

@@ -1,17 +1,17 @@
-function identify(amplitude, f0 ,f1, h, delay)
+function identify(amplitude, f0 ,f1, delay)
 %% setttings
 % save setting
 save_switch = true;
-sweeptime = 60;
+sweeptime = 80;
 if f0 == 0.09 && f1 == 1.21
-    sweeptime = 100;
+    sweeptime = 120;
 end
 % identify delay setting
 observe_delay_sample = 100;
 
 
 %% load data
-data = load_data(amplitude, f0, f1, sweeptime, h);
+data = load_data(amplitude, f0, f1, sweeptime);
 in = data.in;
 t = data.t;
 out_p = data.out_p;
@@ -147,7 +147,7 @@ if save_switch
     vpv = struct_data(tf_vpv, fit_vpv, res_vpv);
     vv = struct_data(tf_vv, fit_vv, res_vv);
     % save
-    save_dir = sprintf("./identify/%s/%.2f-%.2f-%.2f-%.0f-0.7/identify_res.mat", date, amplitude, f0, f1, sweeptime);
+    save_dir = sprintf("./identify/%.2f-%.2f-%.2f-%.0f/identify_res.mat", amplitude, f0, f1, sweeptime);
     save(save_dir, "ex", "vv", "vp", "vpv");
 end
 end

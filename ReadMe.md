@@ -20,7 +20,7 @@ Run `main.m`, then two figures will be generated:
 - Identification Result Data
 
 ### 3. Check Identification Result
-All data will be saved to `./identify/{amplitude}-{f0}-{f1}-{time}-{height}`. Identification result is saved as `identify_result.mat` with three cases:
+All data will be saved to `./identify/{amplitude}-{f0}-{f1}-{time}/`. Identification result is saved as `identify_result.mat` with three cases:
 
 ```matlab
 ex: origin data
