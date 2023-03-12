@@ -24,11 +24,11 @@ All data will be saved to `./identify/{amplitude}-{f0}-{f1}-{time}-{height}`. Id
 
 ```matlab
 ex: origin data
-	ex.t 				% time array
-	ex.in				% velocity cmd data
+	ex.t 		% time array
+	ex.in		% velocity cmd data
 	ex.in_v_int	% position cmd data
-	ex.out_p		% position data
-	ex.out_v		% velocity data
+	ex.out_p	% position data
+	ex.out_v	% velocity data
 vv: vel_cmd -> v
 vp: vel_cmd -> p
 vpv: vel_cmd -> p -> v
@@ -37,7 +37,7 @@ vpv: vel_cmd -> p -> v
 They have the same structure to store results:
 
 ```matlab
-vv.tf		% tranfer function
+vv.tf	% tranfer function
 vv.fit	% fit percentage
 vv.res	% tranfer function model response data
 ```
